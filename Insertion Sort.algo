@@ -1,0 +1,14 @@
+PROCEDURE Insertion_Sort(VAR set: ARRAY_OF INTEGER)
+VAR
+    i, j, key : INTEGER;
+BEGIN
+    FOR i FROM 1 TO set.length-1 DO
+        key = set[j];
+        i = j-1;
+        WHILE (i>0 And set[i]>key) DO
+            set[i+1]=set[i];
+            i = i-1;
+        END_WHILE
+        set[i+1]=key;
+    END_FOR
+END
